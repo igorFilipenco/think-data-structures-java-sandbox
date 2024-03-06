@@ -148,9 +148,9 @@ public class MyArrayListTest {
      */
     @Test
     public void testIndexOfNull() {
-        assertThat(String.valueOf(mylist.indexOf(null)), is(-1));
+        assertEquals(mylist.indexOf(null),-1);
         mylist.add(null);
-        assertThat(String.valueOf(mylist.indexOf(null)), is(3));
+        assertEquals(mylist.indexOf(null),3);
     }
 
     /**

@@ -103,7 +103,7 @@ public class MyArrayList<T> implements List<T> {
 
     @Override
     public boolean containsAll(Collection<?> collection) {
-        for (Object element : collection) {
+        for (Object element: collection) {
             if (!contains(element)) {
                 return false;
             }
