@@ -161,11 +161,7 @@ public class MyLinkedList<E> implements List<E> {
         int index = 0;
 
         while (Objects.nonNull(currentNode)) {
-            if (Objects.isNull(currentNode.data) && Objects.isNull(target)) {
-                return index;
-            }
-
-            if (Objects.nonNull(currentNode.data) && Objects.equals(currentNode.data, target)) {
+            if (equals(currentNode.data, target)) {
                 return index;
             }
 
